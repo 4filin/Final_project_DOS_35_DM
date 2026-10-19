@@ -63,18 +63,6 @@ jobs:
           docker tag $IMAGE:${{ github.sha }} $IMAGE:latest
           docker push $IMAGE:latest
 
-      - name: Get ECR login password
-        id: ecrpwd
-        run: echo "password=$(aws ecr get-login-password --region us-west-1)" >> "$GITHUB_OUTPUT"
-
-      - name: Get server IP
-        id: server
-        run: |
-          IP=$(aws ec2 describe-instances \
-            --filters "Name=tag:Name,Values=final-project-app" "Name=instance-state-name,Values=running" \
-            --query "Reservations[0].Instances[0].PublicIpAddress" --output text)
-          echo "ip=$IP" >> "$GITHUB_OUTPUT"
-
       - name: Update kubeconfig
         run: aws eks update-kubeconfig --region us-west-1 --name final-project
 
