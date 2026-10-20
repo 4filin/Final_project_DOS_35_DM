@@ -88,7 +88,7 @@ GitHub Secrets: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `SSH_PRIVATE_KEY`,
 ├── ansible/                                    # playbook (3 play'я), inventories, group_vars
 ├── k8s/                                        # deployment, service (NodePort), filebeat
 ├── monitoring/                                 # prometheus.yml, compose-файлы стеков
-└── part1..part6                                # документация по этапам
+└── docs                                # документация по этапам
 ```
 
 ## Документация
