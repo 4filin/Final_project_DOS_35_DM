@@ -93,12 +93,12 @@ GitHub Secrets: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `SSH_PRIVATE_KEY`,
 
 ## Документация
 
-- [part1-local-setup.md](part1-local-setup.md) — репозиторий, Docker, тесты
-- [part2-cicd-pipeline.md](part2-cicd-pipeline.md) — CI/CD, разделение по веткам
-- [part3-infrastructure.md](part3-infrastructure.md) — Terraform + Ansible
-- [part4-monitoring.md](part4-monitoring.md) — Prometheus + Grafana
-- [part5-kubernetes.md](part5-kubernetes.md) — EKS, манифесты, балансировка
-- [part6-logging.md](part6-logging.md) — Filebeat + Elasticsearch + Kibana
+- [step1-apps_docker.md](step1-apps_docker.md) — репозиторий, Docker, тесты
+- [step2-cicd-pipeline.md](step2-cicd-pipeline.md) — CI/CD, разделение по веткам
+- [step3-infrastructure.md](step3-infrastructure.md) — Terraform + Ansible
+- [step4-monitoring.md](step4-monitoring.md)— Prometheus + Grafana
+- [step5-kubernetes.md](step5-kubernetes.md) — EKS, манифесты, балансировка
+- [step6-logging](step6-logging) — Filebeat + Elasticsearch + Kibana
 
 
 
